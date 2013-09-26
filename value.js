@@ -12,16 +12,16 @@ function Value(data) {
 	*
 	*/
 	Object.defineProperty(this, "value",{
-       	get: function() { 
+    	get: function() { 
        		return val; 
        	},
-       	set: function(data){
+    	set: function(data){
        		if(data >= min && data <= max)
        			val = data;
        		else
-       			throw new OutOfBounds("The value should be min <= value <= max");
-       	}
-    });
+       			throw new OutOfBounds("Error. Out of Bounds");
+    	}
+	});
 
 	/**
 	*
