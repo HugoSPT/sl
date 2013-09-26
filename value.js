@@ -58,15 +58,15 @@ function Value(data) {
 		}else if(data['value'] && data['max'] && !data['min']){
 			val = data['value'];
 			max = data['max'];
-			min = data['value'] - 1;
+			min = data['value']--;
 		}else if(data['value'] && !data['max'] && data['min']){
 			val = data['value'];
-			max = data['value'] + 1;
+			max = data['value']++;
 			min = data['min'];
 		}else if(data['value'] && !(data['max'] && data['min'])){
 			val = data['value'];
-			max = data['value'] + 1;
-			min = data['value']-1;
+			max = data['value']++;
+			min = data['value']--;
 		}
    	}
 }
