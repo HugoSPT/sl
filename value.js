@@ -53,8 +53,8 @@ function Value(data) {
 	function initialize(data){
 		if(data['value'] && data['min'] && data['max'] && (data['value'] >= data['min'] && data['value'] <= data['max'])){
 			val = data['value'];
-				max = data['max'];
-				min = data['min'];
+			max = data['max'];
+			min = data['min'];
 		}else if(data['value'] && data['max'] && !data['min']){
 			val = data['value'];
 			max = data['max'];
