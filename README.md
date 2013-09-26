@@ -1,0 +1,4 @@
+sl
+==
+
+Javascript exercise
