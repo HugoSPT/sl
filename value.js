@@ -2,7 +2,7 @@
 function Value(data) {
 	if(!(this instanceof Value)) 
 		return new Value(data);
-	var val = 0, min = 0, max = 0;
+	var val = 0; var min = 0; var max = 0;
 	if(data != undefined)
 		initialize(data);
 
