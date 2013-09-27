@@ -58,10 +58,13 @@ function Value(data) {
 		}else if(data['value'] && data['max']){
 			val = data['value'];
 			max = data['max'];
-		}else if(data['value'] && !data['max']){
+		}else if(data['value'] && data['min']){
 			val = data['value'];
 			max = Number.MAX_VALUE;
 			min = data['min'];
+		}else{
+			val = data['value'];
+			max = Number.MAX_VALUE;
 		}
    	}
 }
