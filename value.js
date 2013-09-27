@@ -8,7 +8,8 @@ function Value(data) {
 
 	/**
 	*
-	* value getter and setter definition
+	* Value getter and setter to get and set values
+	* @return val the actual value
 	*
 	*/
 	Object.defineProperty(this, "value",{
@@ -25,7 +26,8 @@ function Value(data) {
 
 	/**
 	*
-	* min getter definition
+	* Min getter to get the min value
+	* @return the min
 	*
 	*/
    	Object.defineProperty(this, "min", {
@@ -36,7 +38,8 @@ function Value(data) {
 
    	/**
 	*
-	* max getter definition
+	* Max getter to get the max value
+	* @return the max
 	*
 	*/
    	Object.defineProperty(this, "max", {
