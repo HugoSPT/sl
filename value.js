@@ -48,7 +48,7 @@ function Value(data) {
    	/**
    	*
    	* Initialize value, max and min variables;
-   	*
+   	* @data - user inputs values, such as value, max and min
    	*/
 	function initialize(data){
 		if(data['value'] && data['min'] && data['max'] && (data['value'] >= data['min'] && data['value'] <= data['max'])){
@@ -66,6 +66,11 @@ function Value(data) {
    	}
 }
 
+/**
+*
+* Making the value a number
+* @return the integer represetantion of this value
+*/
 Value.prototype.toString = function(){
 	return parseInt(this.value);
 }
